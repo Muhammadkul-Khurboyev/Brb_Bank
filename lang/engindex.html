@@ -6,8 +6,9 @@
     <link
     href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
     rel="stylesheet" />
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../style.css">
     <title>Web site for Realty union</title>
+    <link rel="stylesheet" href="./engstyle.css">
 
 </head>
 <body>
@@ -16,10 +17,21 @@
             <div class="nav_header">
                 <div class="nav_logo">
                     <a href="#" class="nav_logo">
-                        <img src="./images/logo-light.png" alt="logo" class="logo-light">
-                        <img src="./images/logo-dark.png" alt="logo" class="logo-dark">
-                        Realty Union
+                        <img src="../images/logo-light.png" alt="logo" class="logo-light">
+                        <img src="../images/logo-dark.png" alt="logo" class="logo-dark">
+                        <span class="logo_text">Realty Union</span>
                     </a>
+                </div>
+                <div class="dropdown_wrapper dropdown_mobile">
+                    <ul>
+                        <li class="dropdown">
+                            <a class="flag lang_link" href="#">English</a>
+                            <ul class="dropdown_content">
+                                <li><a class="flag rus_flag" href="./ruindex.html">Русский</a></li>
+                                <li><a class="flag eng_flag" href="../index.html">Uzbek</a></li>
+                            </ul>
+                        </li>
+                    </ul>
                 </div>
                 <div class="nav_menu_btn" id="menu-btn">
                     <i class="ri-menu-3-line"></i>
@@ -31,13 +43,13 @@
                 <li><a href="#feature">Feature</a></li>
                 <li><a href="#help">Help</a></li>
             </ul>
-            <div class="dropdown_wrapper">
+            <div class="dropdown_wrapper dropdown_tab">
                 <ul>
                     <li class="dropdown">
-                        <a class="flag lang_link" href="#">Uzbek</a>
+                        <a class="flag lang_link" href="#">English</a>
                         <ul class="dropdown_content">
-                            <li><a class="flag rus_flag" href="#">Русский</a></li>
-                            <li><a class="flag eng_flag" href="#">English</a></li>
+                            <li><a class="flag rus_flag" href="./ruindex.html">Русский</a></li>
+                            <li><a class="flag eng_flag" href="../index.html">Uzbek</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -46,7 +58,7 @@
     </header>
     <section class="hero_section">
         <div class="hero_section__image">
-            <img src="./images/sa.png" alt="header">
+            <img src="../images/sa.png" alt="header">
         </div>
         <div class="hero_section__content">
             <h1>Our services in Tashkent </h1>
@@ -58,7 +70,7 @@
     </section>
     <section class="section_container about_container" id="about">
         <div class="about_image">
-            <img src="./images/section.png" alt="about">
+            <img src="../images/section.png" alt="about">
         </div>
         <div class="about_content">
             <h3 class="section_subheader">CONVENIENT INTERACTION</h3>
@@ -83,29 +95,31 @@
 
 
     <section class="fleet_container">
-        <h3 class="section_subheader">ONLY THE BEST ESTATE</h3>
-        <h2 class="section_header">Our comfortable building</h2>
-        <p class="section_description">
-            Buying a home can be one of the most exciting experiences of your life.
-            This can be true whether you’ve purchased several homes or you’re preparing to buy for the first time.
-        </p>
+        <div class="text_wrapper">
+            <h3 class="section_subheader">ONLY THE BEST ESTATE</h3>
+            <h2 class="section_header">Our comfortable building</h2>
+            <p class="section_description">
+                Buying a home can be one of the most exciting experiences of your life.
+                This can be true whether you’ve purchased several homes or you’re preparing to buy for the first time.
+            </p>
+        </div>
         <div class="fleet_wrapper-1">
             <div class="fleet_images">
-                <img src="./images/1.jpg" alt="fleet">
-                <img src="./images/2.jpg" alt="fleet">
-                <img src="./images/3.jpg" alt="fleet">
-                <img src="./images/4.jpg" alt="fleet">
-                <img src="./images/5.jpg" alt="fleet">
-                <img src="./images/13.jpg" alt="fleet">
+                <img src="../images/1.jpg" alt="fleet">
+                <img src="../images/2.jpg" alt="fleet">
+                <img src="../images/3.jpg" alt="fleet">
+                <img src="../images/4.jpg" alt="fleet">
+                <img src="../images/5.jpg" alt="fleet">
+                <img src="../images/13.jpg" alt="fleet">
             </div>
             <div class="fleet_wrapper-2">
                 <div class="fleet_images">
-                    <img src="./images/6.jpg" alt="fleet">
-                    <img src="./images/7.jpg" alt="fleet">
-                    <img src="./images/8.jpg" alt="fleet">
-                    <img src="./images/9.jpg" alt="fleet">
-                    <img src="./images/10.jpg" alt="fleet">
-                    <img src="./images/11.jpg" alt="fleet">
+                    <img src="../images/6.jpg" alt="fleet">
+                    <img src="../images/7.jpg" alt="fleet">
+                    <img src="../images/8.jpg" alt="fleet">
+                    <img src="../images/9.jpg" alt="fleet">
+                    <img src="../images/10.jpg" alt="fleet">
+                    <img src="../images/11.jpg" alt="fleet">
 
                 </div>
             </div>
@@ -113,16 +127,18 @@
     </section>
 
     <section class="section_container feature_container">
-        <h3 class="section_subheader">
-            Best Project
-        </h3>
-        <h2 class="section_header">
-            Our Feature
-        </h2>
-        <p class="section section_description">
-            Enjoy your life booking comfortable and beatiful home and building
-            ,24/7 customer support of luxury vehicles we provide satisfication at every step
-        </p>
+        <div class="text_wrapper">
+            <h3 class="section_subheader">
+                Best Project
+            </h3>
+            <h2 class="section_header">
+                Our Feature
+            </h2>
+            <p class="section section_description">
+                Enjoy your life booking comfortable and beatiful home and building
+                ,24/7 customer support of luxury vehicles we provide satisfication at every step
+            </p>
+        </div>
         <div class="feature_grid">
             <div class="feature_card">
                 <span><i class="ri-bank-card-line"></i></span>
@@ -160,12 +176,12 @@
         <div class="section_container footer_container">
             <div class="footer_col">
                 <a href="#" class="footer_logo">
-                    <img src="./images/logo-dark.png" alt="logo">
+                    <img src="../images/logo-dark.png" alt="logo">
                     Unique
                 </a>
-                <p class="section_description">
+                <span class="section_description">
                     Legal work in the central asia best of the best
-                </p>
+                </span>
                 <div>
                     <div class="social_media__wrapper">
                         <span class="">
@@ -173,13 +189,13 @@
                         </span>
                         <ul class="social_media__list">
                             <li class="social_media__list-item"><a href="https://www.instagram.com/realty_union?igsh=MWZ0dHdsc2Y5dTEzZQ==" target="_blank">
-                                <img src="./images/instagram.png"  alt="Instagram logo" width="30" height="30">
+                                <img src="../images/instagram.png"  alt="Instagram logo" width="30" height="30">
                             </a></li>
                             <li class="social_media__list-item"><a href="https://www.facebook.com/share/1DtnDH3gzK/?mibextid=wwXIfr" target="_blank">
-                                <img src="./images/facebook.png" alt="Facebook logo" width="30" height="30">
+                                <img src="../images/facebook.png" alt="Facebook logo" width="30" height="30">
                             </a></li>
                             <li class="social_media__list-item"><a href="https://t.me/realtyunion" target="_blank">
-                                <img src="./images/telegram.png" alt="Telegram logo" width="30" height="30">
+                                <img src="../images/telegram.png" alt="Telegram logo" width="30" height="30">
                             </a></li>
                         </ul>
                     </div>
@@ -200,7 +216,7 @@
             <div class="footer_col">
                 <h4>Subscribe to News</h4>
                 <form action="/">
-                    <input type="text" placeholder="Your Email">
+                    <input class="your_email__input" type="text" placeholder="Your Email">
                     <button class="btn">
                         <i class="ri-arrow-right-line"></i>
                     </button>
@@ -212,6 +228,6 @@
         </div>
     </footer>
     <script src="https://unpkg.com/scrollreveal"></script>
-    <script src="main.js"></script>
+    <script src="../main.js"></script>
 </body>
 </html>

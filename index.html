@@ -7,7 +7,7 @@
     href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
     rel="stylesheet" />
     <link rel="stylesheet" href="style.css">
-    <title>Web site for Realty union</title>
+    <title>Realty Union uchun veb-sayt</title>
 
 </head>
 <body>
@@ -18,26 +18,37 @@
                     <a href="#" class="nav_logo">
                         <img src="./images/logo-light.png" alt="logo" class="logo-light">
                         <img src="./images/logo-dark.png" alt="logo" class="logo-dark">
-                        Realty Union
+                        <span class="logo_text">Realty Union</span>
                     </a>
+                </div>
+                <div class="dropdown_wrapper dropdown_mobile">
+                    <ul>
+                        <li class="dropdown">
+                            <a class="flag lang_link" href="#">Uzbek</a>
+                            <ul class="dropdown_content">
+                                <li><a class="flag rus_flag" href="./lang/ruindex.html">Русский</a></li>
+                                <li><a class="flag eng_flag" href="./lang/engindex.html">English</a></li>
+                            </ul>
+                        </li>
+                    </ul>
                 </div>
                 <div class="nav_menu_btn" id="menu-btn">
                     <i class="ri-menu-3-line"></i>
                 </div>
             </div>
             <ul class="nav_links" id="nav-links">
-                <li><a href="#about">About Us</a></li>
-                <li><a href="#our works">Our works</a></li>
-                <li><a href="#feature">Feature</a></li>
-                <li><a href="#help">Help</a></li>
+                <li><a href="#about">Biz haqimizda</a></li>
+                <li><a href="#our works">Bizning ishlarimiz</a></li>
+                <li><a href="#feature">Xususiyat</a></li>
+                <li><a href="#help">Yordam</a></li>
             </ul>
-            <div class="dropdown_wrapper">
+            <div class="dropdown_wrapper dropdown_tab">
                 <ul>
                     <li class="dropdown">
                         <a class="flag lang_link" href="#">Uzbek</a>
                         <ul class="dropdown_content">
-                            <li><a class="flag rus_flag" href="#">Русский</a></li>
-                            <li><a class="flag eng_flag" href="#">English</a></li>
+                            <li><a class="flag rus_flag" href="./lang/ruindex.html">Русский</a></li>
+                            <li><a class="flag eng_flag" href="./lang/engindex.html">English</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -49,10 +60,10 @@
             <img src="./images/sa.png" alt="header">
         </div>
         <div class="hero_section__content">
-            <h1>Our services in Tashkent </h1>
+            <h1>Toshkent shahridagi xizmatlarimiz </h1>
             <p class="section_description">
-                Our company is one of the famous real estate
-                companies of the American company Remax and continues to develop
+                Bizning kompaniya mashhur ko'chmas mulk biri hisoblanadi
+                Amerikaning Remax kompaniyasining kompaniyalari va rivojlanishda davom etmoqda
             </p>
         </div>
     </section>
@@ -61,34 +72,36 @@
             <img src="./images/section.png" alt="about">
         </div>
         <div class="about_content">
-            <h3 class="section_subheader">CONVENIENT INTERACTION</h3>
-            <h2 class="section_header">Modern Building</h2>
+            <h3 class="section_subheader">QULAY O'AROA</h3>
+            <h2 class="section_header">Zamonaviy Bino</h2>
             <p class="section_description">
-                RE/MAX® agents have the experience to get the job done in today’s market1,
-                backed by a robust network of over 140,000 agents in more than 9,000 offices worldwide.
-                With our extensive global connections and deep local insights, you gain an edge that
-                transcends what you'll find online. Regardless of market conditions, life moves on—people
-                need to move, sell and buy. RE/MAX agents understand that market shifts open new doors of
-                opportunity, and with a trusted and experienced RE/MAX agent, these opportunities are yours
-                to seize.
+                RE/MAX® agentlari bugungi bozorda ishni bajarish tajribasiga ega1,
+                butun dunyo bo'ylab 9000 dan ortiq ofislarda 140 000 dan ortiq agentlardan iborat mustahkam tarmoq tomonidan qo'llab-quvvatlanadi.
+                Bizning keng qamrovli global aloqalarimiz va chuqur mahalliy tushunchalarimiz bilan siz bundan ustunlikka erishasiz
+                Internetda topadigan narsalaringizdan oshib ketadi. Bozor sharoitidan qat'i nazar, hayot davom etmoqda - odamlar
+                ko'chirish, sotish va sotib olish kerak. RE/MAX agentlari bozor o'zgarishlari yangi eshiklarni ochishini tushunishadi
+                ishonchli va tajribali RE/MAX agenti bilan bu imkoniyatlar sizniki
+                tutmoq.
             </p>
-            <div class="about_btn">
+            <!-- <div class="about_btn">
                 <button class="btn">
                     <span><i class="ri-apple-fill"></i></span>
                     Download App
                 </button>
-            </div>
+            </div> -->
         </div>
     </section>
 
 
     <section class="fleet_container">
-        <h3 class="section_subheader">ONLY THE BEST ESTATE</h3>
-        <h2 class="section_header">Our comfortable building</h2>
-        <p class="section_description">
-            Buying a home can be one of the most exciting experiences of your life.
-            This can be true whether you’ve purchased several homes or you’re preparing to buy for the first time.
-        </p>
+        <h3 class="section_subheader">FAQAT ENG ZO'R MULK</h3>
+        <div class="text_wrapper">
+            <h2 class="section_header">Bizning qulay binomiz</h2>
+            <p class="section_description">
+                Uy sotib olish hayotingizdagi eng hayajonli tajribalardan biri bo'lishi mumkin.
+                Bu siz bir nechta uy sotib olgan bo'lsangiz yoki birinchi marta sotib olishga tayyorlanayotgan bo'lsangiz ham shunday bo'lishi mumkin.
+            </p>
+        </div>
         <div class="fleet_wrapper-1">
             <div class="fleet_images">
                 <img src="./images/1.jpg" alt="fleet">
@@ -113,48 +126,50 @@
     </section>
 
     <section class="section_container feature_container">
-        <h3 class="section_subheader">
-            Best Project
-        </h3>
-        <h2 class="section_header">
-            Our Feature
-        </h2>
-        <p class="section section_description">
-            Enjoy your life booking comfortable and beatiful home and building
-            ,24/7 customer support of luxury vehicles we provide satisfication at every step
-        </p>
+        <div class="text_wrapper">
+            <h3 class="section_subheader">
+                Eng yaxshi loyiha
+            </h3>
+            <h2 class="section_header">
+                Bizning xususiyat
+            </h2>
+            <p class="section section_description">
+                Qulay va chiroyli uy va binoni bron qilib, hayotingizdan rohatlaning
+                ,24/7 hashamatli avtomashinalar mijozlarini qo'llab-quvvatlash, biz har qadamda qoniqishni ta'minlaymiz
+            </p>
+        </div>
         <div class="feature_grid">
             <div class="feature_card">
                 <span><i class="ri-bank-card-line"></i></span>
-                <h4>Most Felxible Payment Plans</h4>
+                <h4>Eng moslashuvchan to'lov rejalari</h4>
             </div>
             <div class="feature_card">
                 <span><i class="ri-customer-service-2-line"></i></span>
-                <h4>Its your dream</h4>
+                <h4>Bu sizning orzuingiz</h4>
             </div>
             <div class="feature_card">
                 <span><i class="ri-roadster-line"></i>></span>
-                <h4>Road is most convenient</h4>
+                <h4>Yo'l eng qulay</h4>
             </div>
             <div class="feature_card">
                 <span><i class="ri-award-line"></i></span>
-                <h4>Best award in the central</h4>
+                <h4>Markazdagi eng yaxshi mukofot</h4>
             </div>
         </div>
     </section>
 
     <section class="section_container banner_container">
-        <h2 class="section_header">Lets build business</h2>
+        <h2 class="section_header">Keling, biznes quraylik</h2>
         <p class="section_description">
-            A small business is a privately owned company that has a small number of employees and lower revenue compared to larger corporations.
-            Small businesses can be in various industries, such as retail, services, manufacturing, or online businesses.
+            Kichik biznes - bu yirik korporatsiyalarga qaraganda oz sonli xodimlarga va past daromadga ega bo'lgan xususiy kompaniya.
+            Kichik biznes chakana savdo, xizmat ko'rsatish, ishlab chiqarish yoki onlayn biznes kabi turli sohalarda bo'lishi mumkin.
         </p><br>
-        <div class="banner_btn">
+        <!-- <div class="banner_btn">
             <button class="btn">
                 <span><i class="ri-apple-fill"></i></span>
                 Download App
             </button>
-        </div>
+        </div> -->
     </section>
     <footer>
         <div class="section_container footer_container">
@@ -163,13 +178,13 @@
                     <img src="./images/logo-dark.png" alt="logo">
                     Unique
                 </a>
-                <p class="section_description">
-                    Legal work in the central asia best of the best
-                </p>
+                <span class="section_description footer_text">
+                    Markaziy Osiyoda huquqiy ish eng yaxshisi
+                </span>
                 <div>
                     <div class="social_media__wrapper">
                         <span class="">
-                            Social Media:
+                            Ijtimoiy tarmoqlar:
                         </span>
                         <ul class="social_media__list">
                             <li class="social_media__list-item"><a href="https://www.instagram.com/realty_union?igsh=MWZ0dHdsc2Y5dTEzZQ==" target="_blank">
@@ -191,16 +206,16 @@
             </div>
             <div class="footer_col">
                 <ul class="footer_links">
-                    <li><a href="#">About us</a></li>
-                    <li><a href="#">Our works</a></li>
-                    <li><a href="#">Feature</a></li>
-                    <li><a href="#">Help</a></li>
+                    <li><a href="#">Biz haqimizda</a></li>
+                    <li><a href="#">Bizning ishlarimiz</a></li>
+                    <li><a href="#">Xususiyat</a></li>
+                    <li><a href="#">Yordam</a></li>
                 </ul>
             </div>
             <div class="footer_col">
-                <h4>Subscribe to News</h4>
+                <h4>Yangilikka obuna bo'ling</h4>
                 <form action="/">
-                    <input type="text" placeholder="Your Email">
+                    <input class="your_email__input" type="text" placeholder="Your Email">
                     <button class="btn">
                         <i class="ri-arrow-right-line"></i>
                     </button>

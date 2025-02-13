@@ -6,8 +6,9 @@
     <link
     href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
     rel="stylesheet" />
-    <link rel="stylesheet" href="style.css">
-    <title>Web site for Realty union</title>
+    <link rel="stylesheet" href="../style.css">
+    <title>Веб-сайт Союза риэлторов</title>
+    <link rel="stylesheet" href="./rustyle.css">
 
 </head>
 <body>
@@ -16,28 +17,39 @@
             <div class="nav_header">
                 <div class="nav_logo">
                     <a href="#" class="nav_logo">
-                        <img src="./images/logo-light.png" alt="logo" class="logo-light">
-                        <img src="./images/logo-dark.png" alt="logo" class="logo-dark">
-                        Realty Union
+                        <img src="../images/logo-light.png" alt="logo" class="logo-light">
+                        <img src="../images/logo-dark.png" alt="logo" class="logo-dark">
+                        <span class="logo_text">Realty Union</span>
                     </a>
+                </div>
+                <div class="dropdown_wrapper dropdown_mobile">
+                    <ul>
+                        <li class="dropdown">
+                            <a class="flag lang_link" href="#">Русский</a>
+                            <ul class="dropdown_content">
+                                <li><a class="flag rus_flag" href="../index.html">Uzbek</a></li>
+                                <li><a class="flag eng_flag" href="engindex.html">English</a></li>
+                            </ul>
+                        </li>
+                    </ul>
                 </div>
                 <div class="nav_menu_btn" id="menu-btn">
                     <i class="ri-menu-3-line"></i>
                 </div>
             </div>
             <ul class="nav_links" id="nav-links">
-                <li><a href="#about">About Us</a></li>
-                <li><a href="#our works">Our works</a></li>
-                <li><a href="#feature">Feature</a></li>
-                <li><a href="#help">Help</a></li>
+                <li><a href="#about">О нас</a></li>
+                <li><a href="#our works">Наши работы</a></li>
+                <li><a href="#feature">Особенность</a></li>
+                <li><a href="#help">Помощь</a></li>
             </ul>
-            <div class="dropdown_wrapper">
+            <div class="dropdown_wrapper dropdown_tab">
                 <ul>
                     <li class="dropdown">
-                        <a class="flag lang_link" href="#">Uzbek</a>
+                        <a class="flag lang_link" href="#">Русский</a>
                         <ul class="dropdown_content">
-                            <li><a class="flag rus_flag" href="#">Русский</a></li>
-                            <li><a class="flag eng_flag" href="#">English</a></li>
+                            <li><a class="flag rus_flag" href="../index.html">Uzbek</a></li>
+                            <li><a class="flag eng_flag" href="./engindex.html">English</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -46,31 +58,31 @@
     </header>
     <section class="hero_section">
         <div class="hero_section__image">
-            <img src="./images/sa.png" alt="header">
+            <img src="../images/sa.png" alt="header">
         </div>
         <div class="hero_section__content">
-            <h1>Our services in Tashkent </h1>
+            <h1>Наши услуги в Ташкенте </h1>
             <p class="section_description">
-                Our company is one of the famous real estate
-                companies of the American company Remax and continues to develop
+                Наша компания является одной из известных компаний в сфере недвижимости.
+                компании американской компании Remax и продолжает развивать
             </p>
         </div>
     </section>
     <section class="section_container about_container" id="about">
         <div class="about_image">
-            <img src="./images/section.png" alt="about">
+            <img src="../images/section.png" alt="about">
         </div>
         <div class="about_content">
-            <h3 class="section_subheader">CONVENIENT INTERACTION</h3>
-            <h2 class="section_header">Modern Building</h2>
+            <h3 class="section_subheader">УДОБНОЕ ВЗАИМОДЕЙСТВИЕ</h3>
+            <h2 class="section_header">Современное здание</h2>
             <p class="section_description">
-                RE/MAX® agents have the experience to get the job done in today’s market1,
-                backed by a robust network of over 140,000 agents in more than 9,000 offices worldwide.
-                With our extensive global connections and deep local insights, you gain an edge that
-                transcends what you'll find online. Regardless of market conditions, life moves on—people
-                need to move, sell and buy. RE/MAX agents understand that market shifts open new doors of
-                opportunity, and with a trusted and experienced RE/MAX agent, these opportunities are yours
-                to seize.
+                Агенты RE/MAX® обладают опытом выполнения работы на современном рынке1,
+                при поддержке надежной сети из более чем 140 000 агентов в более чем 9 000 офисах по всему миру.
+                Благодаря нашим обширным глобальным связям и глубокому знанию местных условий вы получаете преимущество, которое
+                превосходит то, что вы найдете в Интернете. Независимо от рыночных условий, жизнь продолжается – люди
+                нужно перевезти, продать и купить. Агенты RE/MAX понимают, что рыночные изменения открывают новые двери
+                возможность, а с надежным и опытным агентом RE/MAX эти возможности станут вашими.
+                захватить.
             </p>
             <div class="about_btn">
                 <button class="btn">
@@ -83,29 +95,29 @@
 
 
     <section class="fleet_container">
-        <h3 class="section_subheader">ONLY THE BEST ESTATE</h3>
-        <h2 class="section_header">Our comfortable building</h2>
+        <h3 class="section_subheader">ТОЛЬКО ЛУЧШАЯ НЕДВИЖИМОСТЬ</h3>
+        <h2 class="section_header">Наше комфортное здание</h2>
         <p class="section_description">
-            Buying a home can be one of the most exciting experiences of your life.
-            This can be true whether you’ve purchased several homes or you’re preparing to buy for the first time.
+            Покупка дома может стать одним из самых захватывающих событий в вашей жизни.
+            Это может быть верно независимо от того, купили ли вы несколько домов или готовитесь к покупке впервые.
         </p>
         <div class="fleet_wrapper-1">
             <div class="fleet_images">
-                <img src="./images/1.jpg" alt="fleet">
-                <img src="./images/2.jpg" alt="fleet">
-                <img src="./images/3.jpg" alt="fleet">
-                <img src="./images/4.jpg" alt="fleet">
-                <img src="./images/5.jpg" alt="fleet">
-                <img src="./images/13.jpg" alt="fleet">
+                <img src="../images/1.jpg" alt="fleet">
+                <img src="../images/2.jpg" alt="fleet">
+                <img src="../images/3.jpg" alt="fleet">
+                <img src="../images/4.jpg" alt="fleet">
+                <img src="../images/5.jpg" alt="fleet">
+                <img src="../images/13.jpg" alt="fleet">
             </div>
             <div class="fleet_wrapper-2">
                 <div class="fleet_images">
-                    <img src="./images/6.jpg" alt="fleet">
-                    <img src="./images/7.jpg" alt="fleet">
-                    <img src="./images/8.jpg" alt="fleet">
-                    <img src="./images/9.jpg" alt="fleet">
-                    <img src="./images/10.jpg" alt="fleet">
-                    <img src="./images/11.jpg" alt="fleet">
+                    <img src="../images/6.jpg" alt="fleet">
+                    <img src="../images/7.jpg" alt="fleet">
+                    <img src="../images/8.jpg" alt="fleet">
+                    <img src="../images/9.jpg" alt="fleet">
+                    <img src="../images/10.jpg" alt="fleet">
+                    <img src="../images/11.jpg" alt="fleet">
 
                 </div>
             </div>
@@ -114,40 +126,40 @@
 
     <section class="section_container feature_container">
         <h3 class="section_subheader">
-            Best Project
+            Лучший проект
         </h3>
         <h2 class="section_header">
-            Our Feature
+            Наша особенность
         </h2>
         <p class="section section_description">
-            Enjoy your life booking comfortable and beatiful home and building
-            ,24/7 customer support of luxury vehicles we provide satisfication at every step
+            Наслаждайтесь жизнью, бронируя комфортабельный и красивый дом и здание.
+            24/7 поддержка клиентов роскошных автомобилей, мы обеспечиваем удовлетворение на каждом этапе
         </p>
         <div class="feature_grid">
             <div class="feature_card">
                 <span><i class="ri-bank-card-line"></i></span>
-                <h4>Most Felxible Payment Plans</h4>
+                <h4>Наиболее гибкие планы оплаты</h4>
             </div>
             <div class="feature_card">
                 <span><i class="ri-customer-service-2-line"></i></span>
-                <h4>Its your dream</h4>
+                <h4>Это твоя мечта</h4>
             </div>
             <div class="feature_card">
                 <span><i class="ri-roadster-line"></i>></span>
-                <h4>Road is most convenient</h4>
+                <h4>Дорога самая удобная</h4>
             </div>
             <div class="feature_card">
                 <span><i class="ri-award-line"></i></span>
-                <h4>Best award in the central</h4>
+                <h4>Лучшая награда в центре</h4>
             </div>
         </div>
     </section>
 
     <section class="section_container banner_container">
-        <h2 class="section_header">Lets build business</h2>
+        <h2 class="section_header">Давайте строить бизнес</h2>
         <p class="section_description">
-            A small business is a privately owned company that has a small number of employees and lower revenue compared to larger corporations.
-            Small businesses can be in various industries, such as retail, services, manufacturing, or online businesses.
+            Малый бизнес — это частная компания с небольшим количеством сотрудников и более низким доходом по сравнению с более крупными корпорациями.
+            Малый бизнес может работать в различных отраслях, таких как розничная торговля, услуги, производство или онлайн-бизнес.
         </p><br>
         <div class="banner_btn">
             <button class="btn">
@@ -160,47 +172,47 @@
         <div class="section_container footer_container">
             <div class="footer_col">
                 <a href="#" class="footer_logo">
-                    <img src="./images/logo-dark.png" alt="logo">
+                    <img src="../images/logo-dark.png" alt="logo">
                     Unique
                 </a>
-                <p class="section_description">
-                    Legal work in the central asia best of the best
-                </p>
+                <span class="section_description">
+                    Юридическая работа в Центральной Азии лучшие из лучших
+                </span>
                 <div>
                     <div class="social_media__wrapper">
                         <span class="">
-                            Social Media:
+                            Социальные сети:
                         </span>
                         <ul class="social_media__list">
                             <li class="social_media__list-item"><a href="https://www.instagram.com/realty_union?igsh=MWZ0dHdsc2Y5dTEzZQ==" target="_blank">
-                                <img src="./images/instagram.png"  alt="Instagram logo" width="30" height="30">
+                                <img src="../images/instagram.png"  alt="Instagram logo" width="30" height="30">
                             </a></li>
                             <li class="social_media__list-item"><a href="https://www.facebook.com/share/1DtnDH3gzK/?mibextid=wwXIfr" target="_blank">
-                                <img src="./images/facebook.png" alt="Facebook logo" width="30" height="30">
+                                <img src="../images/facebook.png" alt="Facebook logo" width="30" height="30">
                             </a></li>
                             <li class="social_media__list-item"><a href="https://t.me/realtyunion" target="_blank">
-                                <img src="./images/telegram.png" alt="Telegram logo" width="30" height="30">
+                                <img src="../images/telegram.png" alt="Telegram logo" width="30" height="30">
                             </a></li>
                         </ul>
                     </div>
                     <div class="tel_wrapper">
-                        <span class="tel_description">Phone: </span>
+                        <span class="tel_description">Телефон: </span>
                         <a class="tel_number" href="tel:998912240000">+998 (91) 224 00 00</a>
                     </div>
                 </div>
             </div>
             <div class="footer_col">
                 <ul class="footer_links">
-                    <li><a href="#">About us</a></li>
-                    <li><a href="#">Our works</a></li>
-                    <li><a href="#">Feature</a></li>
-                    <li><a href="#">Help</a></li>
+                    <li><a class="fooetr_link" href="#">О нас</a></li>
+                    <li><a class="fooetr_link" href="#">Наши работы</a></li>
+                    <li><a class="fooetr_link" href="#">Особенность</a></li>
+                    <li><a class="fooetr_link" href="#">Помощь</a></li>
                 </ul>
             </div>
             <div class="footer_col">
-                <h4>Subscribe to News</h4>
+                <h4>Подписаться на новости</h4>
                 <form action="/">
-                    <input type="text" placeholder="Your Email">
+                    <input class="your_email__input" type="text" placeholder="Ваш адрес электронной почты">
                     <button class="btn">
                         <i class="ri-arrow-right-line"></i>
                     </button>
@@ -212,6 +224,6 @@
         </div>
     </footer>
     <script src="https://unpkg.com/scrollreveal"></script>
-    <script src="main.js"></script>
+    <script src="../main.js"></script>
 </body>
 </html>

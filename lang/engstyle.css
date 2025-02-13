@@ -1,0 +1,16 @@
+.flag::before {
+  content: "";
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background-image: url('../images/united-kingdom.png');
+  background-size: cover;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+.rus_flag::before {
+  background-image: url("../images/russia.png");
+}
+.eng_flag::before {
+  background-image: url("../images/world.png");
+}

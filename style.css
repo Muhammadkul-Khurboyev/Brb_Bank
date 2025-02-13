@@ -16,6 +16,7 @@
 }
 
 .section_container{
+  font-size: 12px;
   max-width: var(--max-width);
   margin: auto;
   padding: 5rem 1rem;
@@ -56,6 +57,9 @@
 }
 .btn:hover {
   background-color: var(--text-light);
+}
+.dropdown_tab {
+  display: none;
 }
 
 .dropdown_wrapper {
@@ -156,7 +160,7 @@ img {
 
 a {
   text-decoration: none;
-  transition: 0.3s;
+  transition: 0.5s;
 }
 
 html,
@@ -189,11 +193,15 @@ nav{
   font-weight: 600;
   color: var(--white);
 }
+.logo_text {
+  color: var(--extra-light);
+}
 .nav_logo .logo-light{
   max-width: 35px;
 }
 .nav_logo .logo-dark{
   display: none;
+  color: var(--main-color);
 }
 .nav_menu_btn{
   font-size: 1.5rem;
@@ -201,6 +209,7 @@ nav{
   cursor: pointer;
 }
 .nav_links{
+  list-style-type: none;
   position: absolute;
   bottom: 0;
   left: 0;
@@ -212,6 +221,7 @@ nav{
   gap: 2rem;
   padding: 2rem;
   background-color: var(--main-color);
+  color: #eff6ff;
   transition: transform 0.5s;
   z-index: -1;
 }
@@ -222,7 +232,7 @@ nav{
 
 .nav_links a{
   font-weight: 500;
-  color: var(--main-color);
+  color: var(--extra-light);
   white-space: nowrap;
 }
 .nav_links a:hover{
@@ -247,7 +257,7 @@ nav{
 }
 .hero_section__content h1{
   margin-bottom: 2rem;
-  font-size: 4rem;
+  font-size: 3rem;
   font-weight: 700;
   color: var(--text-dark);
   text-align: center;
@@ -304,6 +314,11 @@ nav{
   margin-inline: auto;
   margin-bottom: 4rem;
   padding-inline: 1rem;
+}
+
+.text_wrapper {
+  margin: 0 auto;
+  max-width: 700px;
 }
 
 .fleet_wrapper-1{
@@ -459,7 +474,7 @@ nav{
   gap: 5px;
   font-size: 1.2rem;
   font-weight: 600;
-  color: var(--text-dark);
+  color: var(--main-color);
 }
 .footer_logo img{
   max-width: 35px;
@@ -473,8 +488,9 @@ nav{
 }
 
 .footer_links a{
+  font-size: 14px;
   font-weight: 500;
-  color: var(--text-dark);
+  color: var(--main-color);
 }
 .footer_links a:hover{
   color: var(--text-light);
@@ -483,7 +499,7 @@ nav{
   margin-bottom: 1rem;
   font-size: 1.2rem;
   font-weight: 600;
-  color: var(--text-dark);
+  color: var(--main-color);
 }
 .footer_col ul{
   list-style: none;
@@ -491,7 +507,7 @@ nav{
 }
 
 .social_media__wrapper {
-  padding-left: 40px;
+  /* padding-left: 40px; */
   display: flex;
   align-items: center;
   font-weight: 500;
@@ -508,6 +524,9 @@ nav{
 .social_madia__list-item {
   width: 30px;
 }
+.footer_text {
+  text-align: start;
+}
 
 .tel_number {
   color: #000000;
@@ -520,7 +539,7 @@ nav{
 }
 
 .tel_description {
-  padding-left: 40px;
+  /* padding-left: 40px; */
   color: var(--main-color);
   font-weight: 500;
   padding-right: 10px;
@@ -540,6 +559,9 @@ nav{
   font-size: 1rem;
   color: var(--text-dark);
   background-color: transparent;
+}
+.your_email__input {
+  padding: 10px 8px;
 }
 .footer_col .btn{
   padding: 10px;
@@ -577,6 +599,9 @@ nav{
   .about_btn{
     justify-content: flex-start;
   }
+  .footer_links a{
+    font-size: 16px;
+  }
 }
 
 
@@ -601,6 +626,10 @@ nav{
     color: var(--text-dark);
   }
 
+  .logo_text {
+    color: var(--main-color);
+  }
+
   .nav_logo .logo-light{
     display: none;
   }
@@ -623,6 +652,7 @@ nav{
 
   }
   .nav_links a{
+    font-size: 12px;
     color: var(--main-color);
   }
   .hero_section{
@@ -646,6 +676,13 @@ nav{
     width: unset;
     height: 100%;
     max-height: 300px;
+  }
+
+  .dropdown_mobile {
+    display: none;
+  }
+  .dropdown_tab {
+    display: block;
   }
 
   .hero_section__content{
@@ -689,6 +726,12 @@ nav{
     max-width: 400px;
   }
 
+}
+
+@media (width > 860px){
+  .nav_links a {
+    font-size: 16px;
+  }
 }
 
 @media (width > 1024px){
