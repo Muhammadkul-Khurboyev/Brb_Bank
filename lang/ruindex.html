@@ -3,6 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Reality Union – Innovatsion IT yechimlar, veb-saytlar, mobil ilovalar va dizayn xizmatlari. Biz bilan biznesingizni onlayn rivojlantiring!">
+    <meta name="keywords" content="Reality Union, IT xizmatlar, veb-sayt yaratish, mobil ilovalar, UI/UX dizayn, SEO optimizatsiya">
+    <meta name="author" content="Reality Union">
+    <meta name="robots" content="index, follow">
+
     <link
     href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
     rel="stylesheet" />
@@ -209,15 +214,18 @@
                     <li><a class="fooetr_link" href="#">Помощь</a></li>
                 </ul>
             </div>
-            <div class="footer_col">
-                <h4>Подписаться на новости</h4>
-                <form action="/">
-                    <input class="your_email__input" type="text" placeholder="Ваш адрес электронной почты">
-                    <button class="btn">
-                        <i class="ri-arrow-right-line"></i>
-                    </button>
-                </form>
-            </div>
+        </div>
+        <div class="contact">
+            <form id="contactForm" class="scroll-bottom">
+                <input id="name" type="text" placeholder="Your name" required minlength="2" maxlength="50">
+                <input id="email" type="email" placeholder="Your email" required>
+                <input id="address" type="text" placeholder="Your address" required minlength="2" maxlength="300">
+                <input id="number" type="number" placeholder="Phone Number" required>
+                <textarea name="message" id="message" rows="10" cols="30" placeholder="Your message"></textarea>
+                <div class="btn-box formBtn">
+                    <button type="submit" class="btn">Send Message</button>
+                </div>
+            </form>
         </div>
         <div class="footer_bar">
             Copyright © 2025 Web Design Mastery. All rights reserved.
@@ -225,5 +233,20 @@
     </footer>
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="../main.js"></script>
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "name": "Reality Union",
+            "url": "https://realityunion.com",
+            "logo": "https://realityunion.com/logo.jpg",
+            "description": "Reality Union – Innovatsion IT yechimlar, veb-saytlar, mobil ilovalar va dizayn xizmatlari. Biz bilan biznesingizni onlayn rivojlantiring!",
+            "sameAs": [
+            "https://www.facebook.com/realityunion",
+            "https://www.twitter.com/realityunion",
+            "https://www.linkedin.com/company/realityunion"
+            ]
+        }
+    </script>
 </body>
 </html>

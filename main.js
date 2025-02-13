@@ -1,4 +1,4 @@
-const menuBtn = document.getElementById("menu-btn"); 
+const menuBtn = document.getElementById("menu-btn");
 const navLinks = document.getElementById("nav-links");
 const menuBtnIcon = menuBtn.querySelector("i");
 
@@ -57,23 +57,23 @@ ScrollReveal().reveal(".about_btn" , {
     delay:2500,
 });
 
-const fleet1 = document.querySelector("fleet_wrapper-1 .fleet_images");
-const fleet2 = document.querySelector("fleet_wrapper-2 .fleet_images");
+// const fleet1 = document.querySelector("fleet_wrapper-1 .fleet_images");
+// const fleet2 = document.querySelector("fleet_wrapper-2 .fleet_images");
 
-const fleet1Content = Array.from(fleet1.children);
-const fleet2Content = Array.from(fleet2.children);
+// const fleet1Content = Array.from(fleet1.children);
+// const fleet2Content = Array.from(fleet2.children);
 
-fleet1Content.forEach((item) => {
-    const duplicateNode = item.cloneNode(true);
-    duplicateNode.setAttribute("arria-hidden",true);
-    fleet1.appendChild(duplicateNode);
-});
+// fleet1Content.forEach((item) => {
+//     const duplicateNode = item.cloneNode(true);
+//     duplicateNode.setAttribute("arria-hidden",true);
+//     fleet1.appendChild(duplicateNode);
+// });
 
-fleet2Content.forEach((item) => {
-    const duplicateNode = item.cloneNode(true);
-    duplicateNode.setAttribute("arria-hidden",true);
-    fleet2.appendChild(duplicateNode);
-});
+// fleet2Content.forEach((item) => {
+//     const duplicateNode = item.cloneNode(true);
+//     duplicateNode.setAttribute("arria-hidden",true);
+//     fleet2.appendChild(duplicateNode);
+// });
 ScrollReveal().reveal(".feature_card" , {
     ...scrollRevealOption,
     interval:500,
@@ -89,3 +89,42 @@ ScrollReveal().reveal(".banner_btn" , {
     ...scrollRevealOption,
     delay:1000,
 });
+
+// Send message
+
+const form = document.getElementById('contactForm');
+    const BOT_TOKEN = '7650335694:AAGuhWa1M2XKzvmCgHkAXo_wdm_GkVbvecI';
+    const CHAT_ID = '6708106529';
+
+    form.addEventListener('submit', async (event) => {
+      event.preventDefault();
+
+      const name = document.getElementById('name').value;
+      const address = document.getElementById('address').value;
+      const number = document.getElementById('number').value;
+      const email = document.getElementById('email').value;
+      const message = document.getElementById('message').value;
+
+      const text = `🔔 Yangi Xabar:\n\n👤 Ism: ${name}\n📧 Addres: ${address}\n Phone_number: ${number} Email: ${email}\n💬 Xabar: ${message}`;
+
+      try {
+        const response = await fetch(`https://api.telegram.org/bot${BOT_TOKEN}/sendMessage`, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            chat_id: CHAT_ID,
+            text: text
+          })
+        });
+
+        if (response.ok) {
+          alert('Xabaringiz muvaffaqiyatli yuborildi!');
+          form.reset();
+        } else {
+          alert('Xabarni yuborishda xatolik yuz berdi.');
+        }
+      } catch (error) {
+        console.error('Telegram API xatosi:', error);
+        alert('Xabarni yuborishda xatolik yuz berdi.');
+      }
+    });
